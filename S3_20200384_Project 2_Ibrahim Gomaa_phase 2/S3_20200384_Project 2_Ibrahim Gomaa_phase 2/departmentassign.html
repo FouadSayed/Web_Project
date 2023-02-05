@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Department assign</title>
+
+    <link rel="icon" type="image/png" href="images/icons/logo.ico" />
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="styles/login/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/login/util.css">
+    <link rel="stylesheet" href="styles/CSSstyle_login.css">
+    <link rel="stylesheet" href="styles/CSSstyle_departmentassign.css">
+</head>
+
+<body>
+
+
+    <div class="limiter">
+
+        <div id="navigator">
+
+            <nav class="navbar navbar-expand " id="welcomewelcome">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ml-4">
+
+                        <li class="nav-item">
+                            <a class="nav-link" id="navitemswhite" href="home.html">Home <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown dmenu">
+                            <a class="nav-link dropdown-toggle" href="#" id="navitemswhite"  id="navbardrop" data-toggle="dropdown">
+                                Account
+                            </a>
+                            <div class="dropdown-menu sm-menu">
+                                <a class="dropdown-item"   href="profile.html">Profile</a>
+                                <a class="dropdown-item"   href="login.html">Sign out</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown dmenu">
+                            <a class="nav-link dropdown-toggle" href="#" id="navitemswhite" id="navbardrop"
+                                data-toggle="dropdown">
+                                Edit Student
+                            </a>
+                            <div class="dropdown-menu sm-menu">
+                                <a class="dropdown-item" href="addstudent.html">Add New Studnet</a>
+                                <a class="dropdown-item" href="update.html">Update Student's data</a>
+                                <a class="dropdown-item" href="deletestudent.html">Delete Student</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown dmenu">
+                            <a class="nav-link dropdown-toggle" href="#" id="navitemswhite" id="navbardrop"
+                                data-toggle="dropdown">
+                                View Students
+                            </a>
+                            <div class="dropdown-menu sm-menu">
+                                <a class="dropdown-item" href="active.html">Active Students</a>
+                                <a class="dropdown-item" href="inactive.html">Inactive Students</a>
+                                <a class="dropdown-item" href="showstudent.html">All Students</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" id="navitemswhite" href="search.html">Search</a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+        <div class="container-login100">
+            <div class="wrap-login100">
+                <div class="login100-form-title">
+                    <span class="login100-form-title-1">
+                        Assign a Department to student
+                    </span>
+                </div>
+
+                <form class="login100-form">
+                    <div class="wrap-input100 m-b-26">
+                        <span class="label-input100">Student Name</span>
+                        <input class="input100" readonly type="text" id="id1">
+                    </div>
+
+
+
+                    <div class="wrap-input100 m-b-26">
+                        <span class="label-input100">Student ID</span>
+                        <input class="input100" readonly type="number" id="id2">
+                    </div>
+
+
+                    <div class="wrap-input100 m-b-26">
+                        <span class="label-input100">Department:</span>
+                        <select class="selectpicker form-control-label border-0 mb-1 px-4 py-4 rounded shadow" name="deptt"
+                            id="deptt">
+                            <option value="None" selected>None</option>
+                            <option value="CS">CS</option>
+                            <option value="AI">AI</option>
+                            <option value="IT">IT</option>
+                            <option  value="DS">DS</option>
+                            <option  value="IS">IS</option>
+
+
+                        </select>
+                    </div>
+
+                    
+                    <div class="login100-form-btn m-l-50 m-t-40" id="subb">
+                        Submit
+                    </div>
+
+
+
+                </form>
+            </div>
+        </div>
+
+
+
+        <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+        <script src="vendor/animsition/js/animsition.min.js"></script>
+        <script src="vendor/bootstrap/js/popper.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="vendor/select2/select2.min.js"></script>
+        <script src="vendor/daterangepicker/moment.min.js"></script>
+        <script src="vendor/daterangepicker/daterangepicker.js"></script>
+        <script src="vendor/countdowntime/countdowntime.js"></script>
+        <script src="scripts/JAVAscript_login.js"></script>
+        <script src="scripts/jquery.js"></script>
+        <script src="scripts/JAVAscript_welcome.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="scripts/JAVAscript_departmentassign.js"></script>
+   
+
+</body>
+
+</html>

@@ -1,0 +1,276 @@
+<html>
+
+<head>
+    <link rel="icon" type="image/png" href="images/icons/logo.ico" />
+    <link rel="stylesheet" href="styles/CSSstyle_addstudent.css">
+    
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="styles/login/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/login/util.css">
+    <link rel="stylesheet" href="styles/CSSstyle_login.css">
+    <title>Add Student</title>
+</head>
+
+<body>
+    <div class="limiter">
+
+        <div id="navigator">
+
+            <nav class="navbar navbar-expand " id="welcomewelcome">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ml-4">
+
+                        <li class="nav-item">
+                            <a class="nav-link" id="navitemswhite" href="home.html">Home <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown dmenu">
+                            <a class="nav-link dropdown-toggle" href="#" id="navitemswhite"  id="navbardrop" data-toggle="dropdown">
+                                Account
+                            </a>
+                            <div class="dropdown-menu sm-menu">
+                                <a class="dropdown-item"   href="profile.html">Profile</a>
+                                <a class="dropdown-item"   href="login.html">Sign out</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown dmenu">
+                            <a class="nav-link dropdown-toggle" href="#" id="navitemswhite" id="navbardrop"
+                                data-toggle="dropdown">
+                                Edit Student
+                            </a>
+                            <div class="dropdown-menu sm-menu">
+                                <a class="dropdown-item" href="addstudent.html">Add New Studnet</a>
+                                <a class="dropdown-item" href="update.html">Update Student's data</a>
+                                <a class="dropdown-item" href="deletestudent.html">Delete Student</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown dmenu">
+                            <a class="nav-link dropdown-toggle" href="#" id="navitemswhite" id="navbardrop"
+                                data-toggle="dropdown">
+                                View Students
+                            </a>
+                            <div class="dropdown-menu sm-menu">
+                                <a class="dropdown-item" href="active.html">Active Students</a>
+                                <a class="dropdown-item" href="inactive.html">Inactive Students</a>
+                                <a class="dropdown-item" href="showstudent.html">All Students</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" id="navitemswhite" href="search.html">Search</a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+
+        <div class="container-login100">
+            <div class="wrap-login100">
+                <div class="login100-form-title">
+                    <span class="login100-form-title-1">
+                        Add New Student
+                    </span>
+                </div>
+
+                <form class="login100-form">
+
+
+                    <div class="wrap-input100 m-b-26">
+                        <span class="label-input100">ID</span>
+                        <input class="input100" type="number" id="id1" placeholder="Enter Student's id " required>
+                    </div>
+
+                    <div class="wrap-input100 m-b-26">
+                        <span class="label-input100">Name</span>
+                        <input class="input100" id="name1" placeholder="Enter Student's name " type="text" required>
+                    </div>
+
+                    <div class="wrap-input100 m-b-26">
+                        <span class="label-input100">Birth Date</span>
+                        <input class="input100" id="dob1" placeholder="Enter Student's date of birth " type="date"
+                            required>
+                    </div>
+
+                    <div class="wrap-input100 m-b-26">
+                        <span class="label-input100">National Number</span>
+                        <input class="input100" id="nationaln" placeholder="Enter Student's National number "
+                            maxlength="14" type="number" required>
+                    </div>
+                    <div class="wrap-input100 m-b-26">
+                        <span class="label-input100">GPA</span>
+                        <input class="input100" id="gpa1" placeholder="Enter Student's GPA" type="number" step="0.01"
+                            max="4.00" min="0.00" required>
+
+                    </div>
+
+                    <div class="gege m-b-26">
+                        <span class="label-input100">Gender</span>
+                        <div class="flex-sb-m w-50  m-t-15">
+                            <input class="gender input-checkbox100" type="radio" name="gender" id="radio1" value="Male">
+                            <label class="label-checkbox100" for="radio1">
+                                Male
+                            </label>
+
+                            <input id="radio2" class="gender input-checkbox100" type="radio" name="gender"
+                                value="Female">
+                            <label class="label-checkbox100" for="radio2">
+                                Female
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="gege m-b-26">
+                        <span class="label-input100">Level</span>
+                        <div class="flex-sb-m w-100  m-t-15">
+
+                            <input class="level input-checkbox100" type="radio" name="level" value="1" id="lev1">
+                            <label class="label-checkbox100" for="lev1">
+                                1st Level
+                            </label>
+
+                            <input class="level input-checkbox100" type="radio" name="level" value="2" id="lev2">
+                            <label class="label-checkbox100" for="lev2">
+                                2nd Level
+                            </label>
+
+                            <input class="level input-checkbox100" type="radio" name="level" value="3" id="lev3">
+                            <label class="label-checkbox100" for="lev3">
+                                3rd Level
+                            </label>
+
+                            <input class="level input-checkbox100" type="radio" name="level" value="4" id="lev4">
+                            <label class="label-checkbox100" for="lev4">
+                                4th Level
+                            </label>
+
+
+                        </div>
+                    </div>
+
+                    <div class="gege m-b-26">
+                        <span class="label-input100">Status</span>
+                        <div class="flex-sb-m w-50  m-t-15">
+
+                            <input id="act" class="status input-checkbox100" type="radio" name="status" value="Active">
+                            <label class="label-checkbox100" for="act">
+                                Active
+                            </label>
+
+                            <input id="inact" class="status input-checkbox100" type="radio" name="status"
+                                value="Inactive">
+                            <label class="label-checkbox100" for="inact">
+                                Inactive
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="gege m-b-26">
+                        <span class="label-input100">Department</span>
+                        <div class="flex-sb-m w-100  m-t-15">
+
+                            <input id="DEP" class="department input-checkbox100" type="radio" name="department"
+                                value="CS">
+                            <label class="label-checkbox100" for="DEP">
+                                CS
+                            </label>
+
+                            <input id="DEP2" class="department input-checkbox100" type="radio" name="department"
+                                value="IS">
+                            <label class="label-checkbox100" for="DEP2">
+                                IS
+                            </label>
+
+                            <input id="DEP3" class="department input-checkbox100" type="radio" name="department"
+                                value="IT">
+                            <label class="label-checkbox100" for="DEP3">
+                                IT
+                            </label>
+
+                            <input id="DEP4" class="department input-checkbox100" type="radio" name="department"
+                                value="AI">
+                            <label class="label-checkbox100" for="DEP4">
+                                AI
+                            </label>
+
+                            <input id="DEP5" class="department input-checkbox100" type="radio" name="department"
+                                value="DS">
+                            <label class="label-checkbox100" for="DEP5">
+                                DS
+                            </label>
+
+                            <input id="DEP6" class="department input-checkbox100" type="radio" name="department"
+                                value="None">
+                            <label class="label-checkbox100" for="DEP6">
+                                None
+                            </label>
+
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="wrap-input100 m-b-26">
+                        <span class="label-input100">Email</span>
+                        <input class="input100" id="EMAIL1" placeholder="Enter Student's mail " type="email">
+                    </div>
+
+
+                    <div class="wrap-input100 m-b-26">
+                        <span class="label-input100">Phone</span>
+                        <input id="PHONE1" class="input100" placeholder="Enter Student's phone number " type="number"
+                            maxlength="14">
+                    </div>
+
+
+
+                    <div class="login100-form-btn m-t-40" id="save_all">
+                        Add Student
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/JAVAscript_welcome.js"></script>
+    <script src="scripts/JAVAscript_addstudent.js"></script>
+
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendor/animsition/js/animsition.min.js"></script>
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/daterangepicker/moment.min.js"></script>
+    <script src="vendor/daterangepicker/daterangepicker.js"></script>
+    <script src="vendor/countdowntime/countdowntime.js"></script>
+    <script src="scripts/JAVAscript_login.js"></script>
+ 
+</body>
+
+</html>
